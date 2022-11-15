@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxdemo.BorderpaneController">
+    <top>
+        <Label text="This label is in the top position" BorderPane.alignment="CENTER" />
+    </top>
+    <left>
+        <Label text="This label is in the left position" />
+    </left>
+    <right>
+        <Label text="This label is in the right position" />
+    </right>
+    <center>
+        <StackPane prefWidth="100">
+        <VBox xmlns="http://javafx.com/javafx"
+              xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="center" prefWidth="90">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="button1" prefWidth="90"  />
+            <Button text="button2" prefWidth="90"/>
+            <Button text="button3" prefWidth="90"/>
+        </VBox>
+        </StackPane>
+    </center>
+    <bottom>
+        <StackPane prefWidth="300">
+        <HBox xmlns="http://javafx.com/javafx"
+              xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="center">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="OK" prefWidth="90"  />
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+        </HBox>
+        </StackPane>
+    </bottom>
+
+</BorderPane>

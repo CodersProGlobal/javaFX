@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxdemo.GridpaneController"
+            prefHeight="400.0" prefWidth="600.0" alignment="CENTER" hgap="10" vgap="10" gridLinesVisible="true">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50.0" />
+        <ColumnConstraints percentWidth="50.0"/>
+    </columnConstraints>
+    <Button fx:id="btnOne" text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <Button fx:id="btnTwo" text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+    <Button fx:id="btnThree" text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <Button fx:id="btnFour" text="Button Four" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+</GridPane>
